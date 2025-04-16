@@ -39,7 +39,8 @@ export default function Layout() {
           headerTitle:"",
           headerBackTitle:"",
           contentStyle:{
-            backgroundColor:"black"
+            backgroundColor:"black",
+            paddingHorizontal:5
 
           }
         }}/>
