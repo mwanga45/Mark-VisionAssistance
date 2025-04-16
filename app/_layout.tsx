@@ -1,5 +1,7 @@
 import React from "react";
 import { Stack } from "expo-router";
+import { SlideInLeft } from "react-native-reanimated";
+import { Animated } from 'react-native';
 
 export default function Layout() {
   return (
@@ -9,6 +11,7 @@ export default function Layout() {
           headerShown: false,
           headerBackTitle: "",
           title: "",
+          animation: "slide_from_right",
         }}
       >
         <Stack.Screen
@@ -18,6 +21,13 @@ export default function Layout() {
             title: "",
           }}
         />
+        <Stack.Screen name="home/home" options={{
+          headerShown:false,
+          title:"",
+          contentStyle:{
+            paddingHorizontal:5
+          }
+        }}/>
       </Stack>
     </>
   );
