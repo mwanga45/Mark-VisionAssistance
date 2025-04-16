@@ -33,6 +33,16 @@ export default function Layout() {
             paddingHorizontal:5
           }
         }}/>
+        <Stack.Screen name="landing/landingpage" options={{
+          headerShown:false,
+          title:"",
+          headerTitle:"",
+          headerBackTitle:"",
+          contentStyle:{
+            backgroundColor:"black"
+
+          }
+        }}/>
       </Stack>
     </>
   );

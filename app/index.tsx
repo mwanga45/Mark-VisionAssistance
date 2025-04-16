@@ -24,7 +24,8 @@ useEffect(()=>{
   ]).start()
 
   const Timer = setInterval(()=>{
-    route.replace("/home/home")
+    // route.replace("/home/home")
+    route.replace("/landing/landingpage")
   },2000)
 
   return  ()=> clearInterval(Timer)
