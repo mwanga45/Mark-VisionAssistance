@@ -18,7 +18,7 @@ export default function Landingpage() {
           </Text>
         </View>
         <View style={styles.formcontainer}>
-          <TextInput style={styles.textarea} />
+          <TextInput style={styles.textarea}/>
         </View>
       </View>
     </SafeAreaView>
