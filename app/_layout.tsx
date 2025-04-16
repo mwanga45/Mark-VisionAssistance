@@ -17,8 +17,7 @@ export default function Layout() {
           contentStyle:{
             backgroundColor:Colors.light.background,
           }
-        }}
-      >
+        }}>
         <Stack.Screen
           name="index"
           options={{
