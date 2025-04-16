@@ -41,7 +41,6 @@ export default function Layout() {
           contentStyle:{
             backgroundColor:"black",
             paddingHorizontal:5
-
           }
         }}/>
       </Stack>
