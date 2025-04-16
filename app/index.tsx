@@ -24,7 +24,7 @@ useEffect(()=>{
   ]).start()
 
   const Timer = setInterval(()=>{
-    route.replace("/home")
+    route.replace("/")
   },2000)
 
   return  ()=> clearInterval(Timer)
@@ -43,7 +43,8 @@ useEffect(()=>{
         ]}
       >
         <Ionicons name="school" size={100} color="white" />
-        <Text style={styles.appName}>Medqueue</Text>
+        <Text style={styles.appName}>Mark Vision</Text>
+        <Text style={{color:"grey", fontSize:12, fontWeight:500}}>Power by @45Mwanga</Text>
       </Animated.View>
     </View>
   );
@@ -53,7 +54,7 @@ useEffect(()=>{
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#4CAF50",
+    backgroundColor: "#15AAE6",
     alignItems: "center",
     justifyContent: "center",
   },
