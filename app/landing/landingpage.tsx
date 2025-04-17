@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View, Text, Dimensions, TextInput } from "react-native";
+import { StyleSheet, View, Text, Dimensions, TextInput, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Picker } from '@react-native-picker/picker';
 
@@ -24,10 +24,15 @@ export default function Landingpage() {
         <View style={styles.formcontainer}>
           <TextInput style={styles.textarea} placeholder="255....."/>
         </View>
-        <Picker style={styles.formcontainerPicker}>
+        <Picker style={styles.formcontainerPicker }>
           <Picker.Item label="Disorder" value="disorder"/>
           <Picker.Item label="None" value="none"/>
         </Picker>
+        <TouchableOpacity style ={styles.btn}>
+          <View style={styles.btncontainer}>
+            <Text style={{ color: "white", fontWeight: "800", fontSize: 18 }}>Register</Text>
+          </View>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
@@ -85,6 +90,21 @@ const styles = StyleSheet.create({
     height:50,
     justifyContent:"center",
     paddingHorizontal:12
+  },
+  btn:{
+    position: "relative",
+    width: "50%",
+    height: 40,
+    backgroundColor: "black",
+    top:70.6,
+    borderRadius:20
+  },
+  btncontainer:{
+    width:"100%",
+    height:"100%",
+    justifyContent:"center",
+    alignItems:"center",
+    // backgroundColor:"red"
   },
   textarea: {
   },
