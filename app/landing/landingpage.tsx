@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, View, Text, Dimensions, TextInput } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { Picker } from '@react-native-picker/picker';
 
 export default function Landingpage() {
   return (
@@ -18,8 +19,15 @@ export default function Landingpage() {
           </Text>
         </View>
         <View style={styles.formcontainer}>
-          <TextInput style={styles.textarea}/>
+          <TextInput style={styles.textarea} placeholder="IMC/B....... "/>
         </View>
+        <View style={styles.formcontainer}>
+          <TextInput style={styles.textarea} placeholder="255....."/>
+        </View>
+        <Picker style={styles.formcontainerPicker}>
+          <Picker.Item label="Disorder" value="disorder"/>
+          <Picker.Item label="None" value="none"/>
+        </Picker>
       </View>
     </SafeAreaView>
   );
@@ -39,7 +47,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     justifyContent:"flex-start",
     alignItems:"center",
-    rowGap:20
+    rowGap:20,
   },
   formdiscription: {
     width: "100%",
@@ -65,6 +73,18 @@ const styles = StyleSheet.create({
     backgroundColor:"#D6D6D6",
     borderRadius:18,
     height:45,
+    justifyContent:"center",
+    paddingHorizontal:12
+  },
+  formcontainerPicker: {
+    width:"80%",
+    borderWidth:1,
+    borderColor:"#D6D6D6",
+    backgroundColor:"#D6D6D6",
+    borderRadius:18,
+    height:50,
+    justifyContent:"center",
+    paddingHorizontal:12
   },
   textarea: {
   },
