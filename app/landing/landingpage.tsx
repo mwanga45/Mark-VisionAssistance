@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     position: "relative",
     width: "50%",
     height: 40,
-    backgroundColor: "black",
+    backgroundColor: "#020024",
     top:70.6,
     borderRadius:20
   },
@@ -104,7 +104,6 @@ const styles = StyleSheet.create({
     height:"100%",
     justifyContent:"center",
     alignItems:"center",
-    // backgroundColor:"red"
   },
   textarea: {
   },
